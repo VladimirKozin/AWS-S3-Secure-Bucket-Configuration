@@ -103,14 +103,6 @@ This section outlines the process of creating the S3 bucket, focusing on the cri
 * **Screenshot:**
     * **Bucket Creation Success:** `screenshots/S3Sec-01-05-BucketCreationSuccess.png` (You will take this screenshot after successfully creating the bucket).
 
----
 
-### **What's Next?**
-
-After successfully creating the bucket, the next steps will involve:
-
-* **Step 3:** Uploading a test file and attempting to make it public to explicitly verify the "Block Public Access" setting.
-* **Step 4:** Configuring Server Access Logging for the bucket.
-* **Step 5:** Exploring IAM policies for S3 access.
 
 ---
