@@ -66,8 +66,6 @@ The user is named clearly (e.g., `s3-audit-cli-user`). Crucially, console access
 
 The client reviews the configured user details and permissions summary to ensure accuracy and adherence to the least privilege model before finalizing the user creation.
 
-![Review and Create IAM User](images/IAM_user6_.jpg)
-
 **Step 6: Generate and Securely Retrieve Access Keys (Critical)**
 
 After user creation, the client navigates to the user's "Security credentials" tab to generate the access keys. This involves acknowledging AWS's recommendations for more secure alternatives (like roles or Identity Center) but proceeding with Access Keys for CLI interaction.
