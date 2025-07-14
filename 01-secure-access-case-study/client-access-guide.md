@@ -49,13 +49,18 @@ The user is named clearly (e.g., `s3-audit-cli-user`). Crucially, console access
 
 **Step 4: Assign Read-Only Permissions**
 
-To adhere to the principle of least privilege, specific AWS Managed Policies are attached directly to the user:
-* `AmazonS3ReadOnlyAccess`: Grants read-only permissions to S3 buckets and objects.
-* `IAMReadOnlyAccess`: Allows auditing of IAM policies related to S3 access.
+1.  On the **"Set permissions"** page:
+    * Select the **"Attach policies directly"** option. This is the rightmost of the three options.
+
+2.  In the search box below "Permissions policies," type **`SecurityAudit`**.
+    * From the list of policies, find and **check the box** next to the **`SecurityAudit`** policy.
+    * This single policy grants all necessary read-only permissions for auditing various AWS services, including S3 and IAM.
+
+3.  Ensure **only the `SecurityAudit` policy is selected**.
+4.  Click the **"Next"** button at the bottom of the page.
 
 ![Set Permissions - Attach Policies Directly](images/IAM_user_3.jpg)
-![Search and Select AmazonS3ReadOnlyAccess Policy](images/IAM_user4_.jpg)
-![Search and Select IAMReadOnlyAccess Policy](images/IAM_user5_.jpg)
+
 
 **Step 5: Review and Finalize User Creation**
 
